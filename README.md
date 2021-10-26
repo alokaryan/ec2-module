@@ -1,17 +1,16 @@
 # ec2-module
 this module will create a ec2 instance on aws 
 ## USAGE
-
 provider "aws" {
-    region = "ap-south-1"
-}
-
-module "ec2-instance" {
+  region = "ap-south-1"
+  }
+  
+  module "ec-instance" {
     source = "github.com/alokaryan/ec2-module"
-    ami_id = "ami-0c1a7f89451184c8b"   
-    instance_type = "t2.micro"
-    vpc_id = "vpc-3345b25a"  
-    port = "22"
+    ami_id = "ami-id-of-your-choice"
+    instance_type = "instance-type-of-your-choice"
+    vpc_id = "vpc-id-your-choice"
+    port = "port-of-your-choice"
     cidr_block = "0.0.0.0/0"
-}
-
+    }
+    
