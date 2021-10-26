@@ -2,7 +2,7 @@
 this module will create a ec2 instance on aws
 ## USAGE
 provider "aws" {
-    region = "ap-south-1"
+   region = "ap-south-1"
 }
 
 module "ec2-instance" {
