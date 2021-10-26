@@ -12,4 +12,5 @@ module "ec2-instance" {
     vpc_id = "vpc-3345b25a" 
     port = "22"  
     cidr_block = "0.0.0.0/0" 
+    
 }
