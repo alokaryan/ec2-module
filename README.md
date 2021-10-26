@@ -6,12 +6,11 @@ provider "aws" {
 }
 
 module "ec2-instance" {
-#    source = "./ec2-instance"
     source = "github.com/alokaryan/ec2-module"
-    ami_id = "ami-0c1a7f89451184c8b"   #ubuntu ami-id in Mumbai region
-    instance_type = "t2.micro"
-    vpc_id = "vpc-3345b25a"   #vpc id of my account's default vpc
-    port = "22"
-    cidr_block = "0.0.0.0/0"
+    ami_id = "ami-0c1a7f89451184c8b"   # replace it with your ami id
+    instance_type = "t2.micro"  # replace it with your instance type / size
+    vpc_id = "vpc-3345b25a"   # replace it with your vpc id
+    port = "22"  # replace it with your port
+    cidr_block = "0.0.0.0/0"  # replace it with your CIDR range to allow
 }
 
