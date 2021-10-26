@@ -1,5 +1,5 @@
 # ec2-module
-this module will create a ec2 instance on aws
+this module will create a ec2 instance on aws 
 ## USAGE
 provider "aws" {
     region = "ap-south-1"
